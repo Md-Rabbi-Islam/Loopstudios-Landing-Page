@@ -1,0 +1,223 @@
+@media screen and (max-width:1200px) {
+    .header,.content,.footer-content{
+        padding-inline: 5rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    .header,.content,.footer-content{
+        padding-inline: 3.5rem;
+    }
+    .content-article{
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    .content-title{
+        font-size: 25px;
+        line-height: 2rem;
+    }  
+    .title{
+        margin-bottom: 1rem;
+    }  
+}
+@media screen and (max-width:900px) {
+    .content-title{
+        font-size:18px ;
+        line-height: 1.5rem;
+    }
+    .content-text{
+        font-size: 13px;
+    }
+}
+@media  screen and (max-width:800px) {
+    body.no-scroll{
+        overflow: hidden
+    }
+    .header-container{
+        height: 100%;
+        background-image: url(./images/mobile/image-hero.jpg);
+    }
+    .header-container::before{
+        background: none;
+    }
+    .header{
+        padding: 0;
+    }
+    .content,.footer-content{
+        padding-inline: 3.5rem;
+    }
+    .header-logo{
+        position: absolute;
+        top: 3rem;
+        left:2rem;
+        z-index: 2;
+    }
+    .header-icon{
+        display: block;
+        position: absolute;
+        top:3.3rem ;
+        right:2rem;
+        cursor: pointer;
+    }
+    .close-icon{
+        display: none;
+    }
+    .hamburger-icon.hide-hamburger-icon{
+        display: none;
+    }
+    .close-icon.show-close-icon{
+        display: block;
+    }
+    .header-menu{
+        position: absolute;
+        inset:0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--Black);
+        padding-left: 2rem;
+        opacity: 0;
+    }
+    .header-menu.mobile-menu{
+        opacity: 1;
+    }
+    .header-menu .menu{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .header-menu .menu li a{
+        color: var(--White);
+        text-decoration: none;
+        font-size: 25px;
+        font-family: var(--ffJosefinSans);
+        font-weight:var(--fwLight);
+        text-transform:uppercase;
+    }  
+    .intro{
+        z-index: -1;
+        padding: 18rem 2rem 14rem 2rem;
+    }
+    .intro-text{
+        width: 100%;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+    }
+    .content-intro{
+        flex-direction: column;
+        align-items:center;
+        gap: 2rem;
+    }
+    .content-article{
+        margin-left: 0;
+        padding: 0;
+    }
+    .content-title{
+        font-size: 40px;
+        line-height: 3rem;
+        text-align: center;
+    }
+    .content-text{
+        font-size: var(--fsBody);
+        text-align: center;
+    }
+    .image-container{
+        grid-template-columns: repeat(1,minmax(auto,1fr));
+    }
+    .content-second{
+        position: relative;
+    }
+    .second-top{
+        justify-content: center;
+    }
+    .see-btn{
+        position: absolute;
+        bottom: -5.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer{
+        margin-top: 12rem;
+    }
+    .footer-content,.footer-second,
+    .footer-menu .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-menu .menu{
+        gap: 1.2rem;
+        margin-top: 2.5rem;
+    }
+    .footer-second{
+        margin-top: 2.5rem;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:530px) {
+    .logo{
+        width: 150px;
+    }
+    .text{
+        font-size:40px;
+        line-height: 3rem;
+    }
+    .content-title{
+        font-size: 25px;
+    }
+    .title{
+        line-height: 2rem;
+    }
+    .see-btn{
+        font-size: 12px;
+    }
+    .image-text{
+        font-size: 20px;
+        left: 1rem;
+        bottom: 1rem;
+        line-height: 1.5rem;
+    }
+}
+@media screen and (max-width:426px) {
+    .content,.footer-content,.intro{
+        padding-inline:1.5rem;
+    }
+    .header-logo{
+        left: 1.5rem;
+    }
+    .header-icon{
+        right:1.5rem;
+    }
+    .text{
+        font-size: 24px;
+        line-height:2.3rem ;
+    }
+    .content-title{
+        font-size:20px ;
+    }
+    .title{
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+        margin-top: 1rem;
+    }
+    .content-text{
+        font-size: 13px;
+    }
+    .content-second{
+        margin-top: 6rem;
+    }
+    .second-top{
+        margin-bottom: 15px;
+    }
+    .see-btn{
+        letter-spacing: 1px;
+        padding: 10px 35px;
+    }
+    .image-text{
+        font-size: 18px;
+        left: 10px;
+        bottom: 8px;
+    }  
+}
